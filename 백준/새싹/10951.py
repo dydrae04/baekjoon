@@ -1,13 +1,16 @@
 sum=0
-a=0
 
-while a<5:
-    n=input().split()
-    for i in n:
-        i=int(i)
-        sum+=i
-    print(sum)
-    sum=0
-    a+=1
+while True:
+    try:
+        num=input().split()
+        for i in num:
+            i=int(i)
+            sum+=i
+        if sum==0:
+            break
+        else:
+            print(sum)
+            sum=0
+    except:
+        break
 
-    
